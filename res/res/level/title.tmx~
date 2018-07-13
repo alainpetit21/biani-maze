@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tilesetSnail" tilewidth="32" tileheight="32">
+  <image source="../back/bkTileBankSnail.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Background_Layer" width="20" height="15">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup name="GUI_Layer" width="20" height="15">
+  <object name="sprBianisoftLogo" type="Sprite" x="0" y="0" width="640" height="64">
+   <properties>
+    <property name="stImageFilename" value="/res/sprites/sprBianisoftLogo.png"/>
+    <property name="state_1-Idle" value="1,0.0"/>
+   </properties>
+  </object>
+  <object name="lblPresents" type="Label" x="0" y="190" width="640" height="32">
+   <properties>
+    <property name="nFontSize" value="30"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="center"/>
+    <property name="stText" value="presents:"/>
+   </properties>
+  </object>
+  <object name="lblSegaMasterBIOS" type="Label" x="0" y="220" width="640" height="32">
+   <properties>
+    <property name="nFontSize" value="40"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="center"/>
+    <property name="stText" value="Sega Master System BIOS'"/>
+   </properties>
+  </object>
+  <object name="lblSnailMaze" type="Label" x="0" y="290" width="640" height="96">
+   <properties>
+    <property name="nFontSize" value="90"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="center"/>
+    <property name="stText" value="Snail Maze"/>
+   </properties>
+  </object>
+  <object name="lblPressEnter" type="Label" x="0" y="400" width="640" height="32">
+   <properties>
+    <property name="nFontSize" value="25"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="center"/>
+    <property name="stText" value="Press Enter!"/>
+   </properties>
+  </object>
+  <object name="lblCopyright" type="Label" x="0" y="450" width="640" height="32">
+   <properties>
+    <property name="nFontSize" value="12"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="center"/>
+    <property name="stText" value="© SEGA 1988\n© Alain Petit 2012"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer name="BlockingWindow_Layer" width="20" height="2">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+</data>
+ </layer>
+ <objectgroup name="MouseCursor_Layer" width="20" height="15">
+  <object name="sprCursor" type="Sprite" x="-83" y="218" width="32" height="32">
+   <properties>
+    <property name="isCameraBound" value="true"/>
+    <property name="stImageFilename" value="/res/sprites/Cursor.png"/>
+    <property name="state_1-Idle" value="1,0.0"/>
+    <property name="state_2-Over" value="1,0.0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

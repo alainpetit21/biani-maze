@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="15" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="tilesetSnail" tilewidth="32" tileheight="32">
+  <image source="../back/bkTileBankSnail.png" width="64" height="32"/>
+ </tileset>
+ <layer name="Background_Layer" width="20" height="15">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+</data>
+ </layer>
+ <objectgroup name="GUI_Layer" width="20" height="15">
+  <object name="lblTitle" type="Label" x="0" y="0" width="320" height="112">
+   <properties>
+    <property name="isMultiline" value="true"/>
+    <property name="nFontSize" value="30"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="left"/>
+    <property name="stText" value="Welcome to\nSnail Maze"/>
+   </properties>
+  </object>
+  <object name="lblRound" type="Label" x="320" y="128" width="64" height="32">
+   <properties>
+    <property name="nFontSize" value="30"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="left"/>
+    <property name="stText" value="RD"/>
+   </properties>
+  </object>
+  <object name="lblCopyright" type="Label" x="0" y="112" width="320" height="48">
+   <properties>
+    <property name="isMultiline" value="true"/>
+    <property name="nFontSize" value="15"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="left"/>
+    <property name="stText" value="Copyright Sega\nPorted by Alain Petit"/>
+   </properties>
+  </object>
+  <object name="lblTime" type="Label" x="464" y="128" width="96" height="32">
+   <properties>
+    <property name="nFontSize" value="30"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="left"/>
+    <property name="stText" value="Time"/>
+   </properties>
+  </object>
+  <object name="lblRoundValue" type="Label" x="384" y="128" width="64" height="32">
+   <properties>
+    <property name="clrText" value="255,255,000,255"/>
+    <property name="nFontSize" value="30"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="left"/>
+    <property name="stText" value="1"/>
+   </properties>
+  </object>
+  <object name="lblTimeValue" type="Label" x="560" y="128" width="80" height="32">
+   <properties>
+    <property name="clrText" value="255,255,000,255"/>
+    <property name="nFontSize" value="30"/>
+    <property name="stFontFilename" value="/res/font/FreeMonoBold.ttf"/>
+    <property name="stMode" value="left"/>
+    <property name="stText" value="60"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="MouseCursor_Layer" width="20" height="15">
+  <object name="sprCursor" type="Sprite" x="305" y="208" width="32" height="32">
+   <properties>
+    <property name="isCameraBound" value="true"/>
+    <property name="stImageFilename" value="/res/sprites/Cursor.png"/>
+    <property name="state_1-Idle" value="1,0.0"/>
+    <property name="state_2-Over" value="1,0.0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
